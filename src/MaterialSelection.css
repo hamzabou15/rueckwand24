@@ -1,0 +1,94 @@
+.materials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0px;
+  margin-top:40px;
+}
+
+.materials .material-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0px auto;
+  min-height: 150px;
+  border-radius: 24px;
+  border: 2px solid #157A3D;
+  display: flex;
+  position:relative;
+}
+
+.materials .material-container .img-section {
+  width: 35%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.materials .material-container .img-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+
+.materials .material-container .list-section  {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin:14px 0px 8px 0px;
+  
+}
+.materials .material-container .list-section  h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin: 0px;
+}
+.materials .material-container .list-section  .list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.materials .material-container .list-section  .list .item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.materials .material-container .list-section  .list .item p {
+  font-size: 12px;
+}
+.materials .material-container .list-section  .list .item .icon {
+  color: #ffff;
+  border-radius: 50%;
+  background-color: #157A3D;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+.materials .material-container .tag {
+
+   /* height:30px; */
+   padding:10px;
+   border-radius: 8px;
+   position:absolute;
+   top:-15px;
+   right:20px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:5px;
+   font-size:10px;
+   color:#ffff
+}
+.materials .material-container .tag-green {
+   background-color: #0DB54F ;
+  }

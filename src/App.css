@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+  font-family: "Inter", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  max-width: 1500px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .left-section {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app .left-section .image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  margin: 0px;
+}
+p{
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #157a3dc2;
+  border-radius: 50%;
+  position: absolute;
+  cursor: grab;
+}
+
+.app .section .right-section {
+  width: 30%;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app .section .right-section h2 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 3%;
+  margin: 0px;
+}
+
+.app .section .right-section h5 {
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #157A3D;
+  font-weight: 600;
+  letter-spacing: 2%;
+  margin: 10px 0px;
+}
+
+
+.app .section .input-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+
+}
+
+.app .section .input-container .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.app .section .input-container .input-wrapper label {
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+
+.app .section .input-container .input-wrapper input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  outline: none
+}
+
+.app .section .input-container .input-wrapper input:focus {
+
+  border: 2px solid #157A3D;
+
+}
+
+.app .section .right-section .add-circle-button {
+
+  background-color: #157A3D;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0px auto;
+  width: 240px;
+  height: 40px;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .section .right-section .add-circle-button:hover {
+  background-color: #0f5f2f;
+  box-shadow: 0px 4px 4px 2px rgba(15, 95, 47, 0.2);
+  transition: 0.3s ease;
 }
